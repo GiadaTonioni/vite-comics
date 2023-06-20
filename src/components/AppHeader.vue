@@ -1,5 +1,51 @@
 <script>
 export default {
+  data() {
+    return {
+      options: [
+        {
+          label: 'CARACHTERS',
+          active: false
+        },
+        {
+          label: 'COMICS',
+          active: true
+        },
+        {
+          label: 'MOVIES',
+          active: false
+        },
+        {
+          label: 'TV',
+          active: false
+        },
+        {
+          label: 'GAMES',
+          active: false
+        },
+        {
+          label: 'COLLECTIBLES',
+          active: false
+        },
+        {
+          label: 'VIDEOS',
+          active: false
+        },
+        {
+          label: 'FANS',
+          active: false
+        },
+        {
+          label: 'NEWS',
+          active: false
+        },
+        {
+          label: 'SHOP',
+          active: false
+        },
+      ]
+    }
+  }
 
 }
 </script>
@@ -14,7 +60,9 @@ export default {
           </div>
           <div class="col-header-right">
             <ul>
-              <li>MENU HEADER</li>
+              <li v-for="(option, index) in options">
+                <a :href="option.option">{{ option.label }}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -54,6 +102,11 @@ export default {
 .jumbotron {
   background-color: black;
   height: 100px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
 }
 </style>
       
