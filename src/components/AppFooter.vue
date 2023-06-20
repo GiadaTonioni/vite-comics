@@ -15,6 +15,6 @@ export default {
         </footer>
     </div>
 </template>
-<style lang="">
-  
+<style lang="scss">
+@use '../styles/partials/variables' as*;
 </style>

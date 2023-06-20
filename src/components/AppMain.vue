@@ -40,6 +40,7 @@ export default {
         </main>
     </div>
 </template>
-<style lang="">
-  
+
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as*;
 </style>
