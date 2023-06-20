@@ -6,7 +6,7 @@ export default {
 <template>
     <div>
         <footer>
-            <div class="container">FOOTER
+            <div class="container">
                 <div class="row">
                     <div class="col">BUTTON</div>
                     <div class="col">Follow loghi</div>
@@ -15,6 +15,18 @@ export default {
         </footer>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variables' as*;
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    background-color: pink;
+    height: 120px;
+    width: 700px;
+}
 </style>

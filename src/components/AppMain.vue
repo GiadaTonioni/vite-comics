@@ -6,7 +6,7 @@ export default {
 <template>
     <div>
         <main>
-            <div class="container"> MAIN
+            <div class="container">
                 <div class="row">
                     <div class="col-list">
                         <div class="container">
@@ -41,7 +41,7 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variables' as*;
 
 .row {
