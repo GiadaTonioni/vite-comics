@@ -69,7 +69,9 @@ export default {
 
       </div>
 
-      <div class="jumbotron">Content goes here</div>
+      <div class="jumbotron">
+        .
+      </div>
     </header>
   </div>
 </template>
@@ -88,9 +90,8 @@ export default {
 }
 
 .jumbotron {
-  background-color: black;
-  height: 100px;
-  color: white;
+  background-image: url(../assets/img/jumbotron.jpg);
+  height: 260px;
 }
 
 li {
