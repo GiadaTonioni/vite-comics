@@ -60,7 +60,7 @@ export default {
           </div>
           <div class="col-header-right">
             <ul>
-              <li v-for="(option, index) in options">
+              <li v-for="(option, index) in options" :key="index">
                 <a :href="option.option">{{ option.label }}</a>
               </li>
             </ul>
@@ -99,6 +99,11 @@ li {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+
+  &:hover {
+    border-bottom: 4px solid rgb(0, 132, 255);
+    cursor: pointer;
+  }
 }
 </style>
       
