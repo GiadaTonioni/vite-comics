@@ -69,7 +69,7 @@ export default {
 
       </div>
 
-      <div class="jumbotron">FASCIA NERA</div>
+      <div class="jumbotron">Conent goes here</div>
     </header>
   </div>
 </template>
@@ -87,26 +87,18 @@ export default {
   margin: 0 auto;
 }
 
-.col-header-left {
-  border: 1px solid blue;
-  height: 120px;
-  width: 20%;
-}
-
-.col-header-right {
-  border: 1px solid blue;
-  height: 120px;
-  width: 60%;
-}
-
 .jumbotron {
   background-color: black;
   height: 100px;
+  color: white;
 }
 
 li {
   list-style-type: none;
   display: inline;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 </style>
       

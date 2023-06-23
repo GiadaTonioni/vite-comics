@@ -12,8 +12,11 @@ export default {
                         <div class="container">
                             <div class="row-list">
                                 <div class="col-small">
-                                    <h4>DC COMICS</h4>
+
                                     <ul>
+                                        <li>
+                                            <h4>DC COMICS</h4>
+                                        </li>
                                         <li>Carachters</li>
                                         <li>Comics</li>
                                         <li>Movies</li>
@@ -29,8 +32,11 @@ export default {
                                     </ul>
                                 </div>
                                 <div class="col-small">
-                                    <h4>DC</h4>
+
                                     <ul>
+                                        <li>
+                                            <h4>DC</h4>
+                                        </li>
                                         <li>Terms of use</li>
                                         <li>Privacy Policy(New)</li>
                                         <li>Ad Choices</li>
@@ -46,8 +52,11 @@ export default {
                                     </ul>
                                 </div>
                                 <div class="col-small">
-                                    <h4>SITES</h4>
+
                                     <ul>
+                                        <li>
+                                            <h4>SITES</h4>
+                                        </li>
                                         <li>DC</li>
                                         <li>MAD Magazine</li>
                                         <li>DC Kids</li>
@@ -59,7 +68,7 @@ export default {
                         </div>
                     </div>
                     <div class="col-back">
-                        LOGONE
+                        <img src="../assets/img/dc-logo-bg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -72,22 +81,8 @@ export default {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.col-list {
-    border: 1px solid black;
-    height: 400px;
-    width: 40%;
-    background-color: aqua;
-}
-
-.col-back {
-    border: 1px solid black;
-    height: 400px;
-    width: 50%;
-    background-color: rgb(72, 0, 255);
 }
 
 .row-list {
@@ -96,9 +91,30 @@ export default {
     flex-wrap: wrap;
 }
 
-.col-small {
-    height: 300px;
-    width: 20%;
-    background-color: beige;
+
+main {
+    background-image: url(../assets/img/footer-bg.jpg);
+    height: 500px;
+}
+
+img {
+    object-fit: cover;
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    color: grey;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+h4,
+li {
+    font-family: Arial, Helvetica, sans-serif;
 }
 </style>
