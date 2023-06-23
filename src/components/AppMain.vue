@@ -94,11 +94,13 @@ export default {
 
 main {
     background-image: url(../assets/img/footer-bg.jpg);
-    height: 500px;
+    height: 470px;
 }
 
 img {
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 }
 
 h4 {

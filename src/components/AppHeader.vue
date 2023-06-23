@@ -69,7 +69,7 @@ export default {
 
       </div>
 
-      <div class="jumbotron">Conent goes here</div>
+      <div class="jumbotron">Content goes here</div>
     </header>
   </div>
 </template>
@@ -79,7 +79,7 @@ export default {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -98,7 +98,7 @@ li {
   display: inline;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 </style>
       
