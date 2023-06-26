@@ -72,12 +72,41 @@ export default {
       <div class="jumbotron">
         .
       </div>
+      <section>
+        <div class="container-comics">
+          <div class="row-comics">
+
+            <div class="col">
+              <div class="card" v-for="(comic, index) in comics" :key="index">
+                <img :src="comic.thumb">
+                <h5>{{ comic.series }}</h5>
+                <p>{{ comic.type }}</p>
+                <p>{{ comic.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as*;
+
+.container-comics {
+  height: 500px;
+  background-color: black;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+}
+
+img {
+  width: 50%;
+}
 
 .row {
   display: flex;
