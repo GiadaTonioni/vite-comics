@@ -147,7 +147,21 @@ export default {
 
                 </div>
             </div>
+            <section>
+                <div class="container-comics">
+                    <div class="row-comics">
 
+                        <div class="col">
+                            <div class="card" v-for="(comic, index) in comics" :key="index">
+                                <img :src="comic.thumb">
+                                <h5>{{ comic.series }}</h5>
+                                <p>{{ comic.type }}</p>
+                                <p>{{ comic.price }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 </template>
